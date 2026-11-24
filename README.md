@@ -32,7 +32,9 @@ Abrir `http://localhost:5173`.
 
 ## Marca y presentación
 
-El logo de **Meshform Studio** es procedural (canvas, sin imágenes ni fuentes externas) y aparece en el HUD, en la base de la pantalla LED, en los portadores de discos, en el combo rack y en la imagen de fallback. Los portadores son racks horizontales estilo Eleiko / estacionamiento de bicis: los discos quedan separados por arcos y se cargan por los pernos cromados.
+La marca se redujo a lo esencial: el **mark de Meshform** (triángulo alámbrico verde menta, el mismo de la web del estudio) y la palabra `meshform`, sin bloques rojos ni lemas extra. Aparece en el HUD, en la base de la pantalla LED —achicada para no competir con los resultados— y grabado en los discos, además del fallback estático. Los portadores son racks horizontales estilo Eleiko / estacionamiento de bicis: los discos quedan separados por arcos y se cargan por los pernos cromados.
+
+El logo es procedural (canvas, sin imágenes ni fuentes externas) y usa el mismo path SVG que el sitio del estudio, así que la marca coincide con `https://meshform-theta.vercel.app`.
 
 La iluminación usa reflejos de estudio generados en memoria (`Environment` + `Lightformer`), sombras de contacto estáticas y una exposición levemente más alta. La resolución se ajusta sola según los FPS reales (`PerformanceMonitor`), así que en equipos lentos baja el DPR y en móvil también se reducen partículas y sombras.
 
@@ -46,7 +48,9 @@ El proyecto ya incluye `vercel.json`:
 
 En Vercel: **Add New → Project → Import Git Repository → Deploy**. No hacen falta variables de entorno.
 
-Demo publicada: **https://meshform-powerlifting-3d.vercel.app**. El deploy se hizo con `npx vercel@66.6.0 --prod --yes` desde esta carpeta (sin repo git, Vercel vinculó el proyecto `meshform-powerlifting-3d`). Para actualizar: correr `npm run build` y después `npx vercel@66.6.0 --prod --yes`.
+Demo publicada: **https://meshform-powerlifting-3d.vercel.app**. El deploy se hizo con `npx vercel@66.6.0 --prod --yes` desde esta carpeta. Para actualizar: correr `npm run build` y después `npx vercel@66.6.0 --prod --yes`.
+
+La demo también está linkeada como **segundo caso destacado** en la web del estudio (`https://meshform-theta.vercel.app/en`, sección Work, textos EN/ES), con dos capturas de la escena. El código de esa web vive en `https://github.com/valentesta/meshform-web` y se deploya solo con pushear `main`. El código de esta demo vive en `https://github.com/valentesta/meshform-powerlifting-3d` (branch `main`).
 
 ## Modelos GLB opcionales (FASE 7)
 
